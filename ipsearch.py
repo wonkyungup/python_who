@@ -37,6 +37,8 @@ import locale
 import urllib.request
 import json
 
+list_ = ['None', ' ', 'NA']
+
 # import pdb
 filename = ''
 
@@ -228,9 +230,6 @@ def parse_command_line(argv):
     parser.add_option("-?", "--help", action="help")
 
     return parser.parse_args(argv)
-
-
-list_ = ['None', ' ', 'NA']
 
 def read_dict(data):
     str_ = json.loads(data)
